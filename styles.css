@@ -1,0 +1,14 @@
+:root {
+  --font-1: #fff;
+  --font-2: #a1ff14;
+  --font-3: #000;
+}
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: #000;
+  font-family: sans-serif;
+  color: var(--font-1);
+}

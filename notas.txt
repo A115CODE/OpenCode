@@ -1,0 +1,7 @@
+IMPORTANTE
+en el index principal. reemplazarlo por la landigpage o directamente por el login.
+evitar en la medida de lo posible el uso del metodo redirecTo
+
+<script>
+      window.location.href = 'app/app.html';
+</script>
