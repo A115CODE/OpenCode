@@ -21,6 +21,6 @@ document.getElementById('ADMIN_FORM').addEventListener('submit', async (e) => {
   } else {
     alert('Inicio de sesión exitoso');
     // Redirige a la página principal o dashboard
-    window.location.href = '';
+    window.location.href = 'ruta ak app';
   }
 });
