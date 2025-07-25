@@ -1,7 +1,8 @@
 :root {
   --font-1: #000;
   --font-2: #a1ff14;
-  --font-3: #fff;
+  --bg-1: #fff;
+
 }
 * {
   margin: 0%;
@@ -10,4 +11,24 @@
 body {
   font-family: sans-serif;
   color: var(--font-1);
+}
+
+/* Webkit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho vertical */
+  height: 12px; /* Alto horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Fondo de la pista */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(74, 74, 74); /* Color del pulgar (barra que se mueve) */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color cuando pasas el mouse */
 }

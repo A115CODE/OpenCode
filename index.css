@@ -16,3 +16,24 @@ section{
   z-index: -1;
   display: flex;
 }
+#WELCOME{
+  position: absolute;
+  top: 40%;
+  background-color: var(--bg-1);
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 0 45px 45px 0 ;
+  
+}
+#BUTTONS{
+  position: absolute;
+  bottom: 20%;
+}
+a{
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: #227778;
+  color: #fff;
+}
