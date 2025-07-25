@@ -1,59 +1,18 @@
+section{
+  width: 100%;
+  height: 100vh;
+}
 #BACKGROUND{
   background-image: url('./app/assets/mountains.svg');
   background-size: cover;      /* Ajusta la imagen para cubrir todo el div */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat;/* Evita que se repita la imagen */
-  position: fixed;
-  height: 40vh;
+  position: absolute;
+  height: 50vh;
   top: 0%;
   left: 0%;
   right: 0%;
   border-radius: 0 0 45px 45px;
   z-index: -1;
-}
-header {
-  width: 100%;
-  height: 10vh;
   display: flex;
-}
-#LOGO {
-  width: 100px;
-  margin: 0 10px;
-}
-section {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#info {
-  width: 80%;
-  padding: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#LANDING {
-  width: 100px;
-  margin: 20px 0;
-}
-#BUTTONS {
-  padding: 10%;
-}
-a {
-  padding: 10px;
-  margin: 5px;
-  border-radius: 9px;
-  color: var(--font-3);
-  text-decoration: dashed;
-}
-#uno {
-  background-color: #fff;
-}
-#dos {
-  background-color: #a1ff14;
 }

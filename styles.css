@@ -1,7 +1,7 @@
 :root {
-  --font-1: #fff;
+  --font-1: #000;
   --font-2: #a1ff14;
-  --font-3: #000;
+  --font-3: #fff;
 }
 * {
   margin: 0%;
