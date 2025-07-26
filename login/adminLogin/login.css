@@ -10,6 +10,21 @@ body{
     align-items: center;
     flex-direction: column;
 }
+#BACK{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+}
+#BACK img {
+    width: 20px;
+}
 #ADMIN_FORM{
     margin: auto;
     background-color: #fff;
@@ -26,7 +41,20 @@ body{
 }
 input{
     padding: 10px;
-    margin: 10px 0;
+    margin: 20px 0;
     border: none;
     border-bottom: 1px solid #000;
+    transition: var(--animation);
+}
+input:focus {
+    outline: none;
+    transform: scale(1.1);
+}
+button{
+    padding: 10px 15px;
+    background-color: #227778;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    margin: 20px 0;
 }

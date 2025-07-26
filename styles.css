@@ -2,7 +2,7 @@
   --font-1: #000;
   --font-2: #a1ff14;
   --bg-1: #fff;
-
+  --animation: all ease 500ms;
 }
 * {
   margin: 0%;
