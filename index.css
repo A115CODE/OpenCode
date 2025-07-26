@@ -14,7 +14,6 @@ section{
   right: 0%;
   border-radius: 0 0 45px 45px;
   z-index: -1;
-  display: flex;
 }
 #WELCOME{
   position: absolute;
@@ -36,4 +35,10 @@ a{
   border-radius: 9px;
   background-color: #227778;
   color: #fff;
+}
+#MORE_CONTENT{
+  width: 36px;
+  position: absolute;
+  bottom: 2%;
+  left: 47%;
 }

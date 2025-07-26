@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AdminLOG</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <a id="BACK" href="../../index.html"><img src="../../app/assets/back.svg" alt=""></a>
+    <div id="FORM_CONTAINER">
+      <form id="ADMIN_FORM" action="/login" method="POST">
+        <h2>Iniciar Sesión</h2>
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Entrar</button>
+        <a href="">Olvide mi Contrasena</a>
+      </form>
+    </div>
+    <script type="module" src="./login.js"></script>
+  </body>
+</html>

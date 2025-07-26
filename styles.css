@@ -1,7 +1,8 @@
 :root {
   --font-1: #000;
-  --font-2: #a1ff14;
+  --font-2: #fff;
   --bg-1: #fff;
+  --color-1: #227778;
   --animation: all ease 500ms;
 }
 * {
@@ -25,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(74, 74, 74); /* Color del pulgar (barra que se mueve) */
+  background: #227778; /* Color del pulgar (barra que se mueve) */
   border-radius: 10px;
 }
 
