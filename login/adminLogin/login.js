@@ -17,6 +17,6 @@ document.getElementById('ADMIN_FORM').addEventListener('submit', async (e) => {
     console.error(error);
   } else {
     alert('Inicop de sesion exitoso');
-    window.location.href = 'ruta ak app';
+    window.location.href = '../../app/admin/dashboard.html';
   }
 });
