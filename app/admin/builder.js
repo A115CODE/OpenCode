@@ -1,3 +1,5 @@
+console.log('Builder On');
+
 function BUILDER_SCRIPT(SRC) {
   const SCRIPT = document.createElement('script');
   SCRIPT.src = SRC;
@@ -10,10 +12,7 @@ function BUILDER_CSS(URL) {
   document.head.appendChild(CSS);
 }
 
-// APP
-BUILDER_SCRIPT('./components/view/view.js');
-BUILDER_CSS('./components/view/view.css');
-BUILDER_SCRIPT('./components/navbar/navbar.js');
+// Components
+BUILDER_SCRIPT('./components/navbar/navbar.js')
+BUILDER_CSS('./components/navbar/navbar.css')
 // Modules
-BUILDER_SCRIPT('./modules/home/home.js');
-BUILDER_CSS('./modules/home/home.css');
