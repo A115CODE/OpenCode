@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const COMPONENT = document.getElementById('COURSES');
     
     BUTTON.addEventListener('click', () => {
-      VIEWS.innerHTML = ''; // Limpia el contenido anterior si es necesario
-      VIEWS.appendChild(COURSES);
-      COURSES.style.display = 'block'; // Asegúrate de que sea visible
+      VIEWS.appendChild(COMPONENT);
+      COMPONENT.style.display = 'block'; // Asegúrate de que sea visible
     });
   });
   

@@ -12,6 +12,7 @@ ICO_HOME.src = '../assets/home.svg'
 BTN_HOME.appendChild(ICO_HOME);
 
 const BTN_COURSES = document.createElement('button');
+BTN_COURSES.id = 'BTN_COURSES';
 NAVBAR.appendChild(BTN_COURSES);
 
 const ICO_COURSES = document.createElement('img');

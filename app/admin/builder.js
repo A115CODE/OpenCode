@@ -15,7 +15,6 @@ function BUILDER_CSS(URL) {
 // Components
   // NavBar
 BUILDER_SCRIPT('./components/navbar/navbar.js');
-
 BUILDER_CSS('./components/navbar/navbar.css');
   // View
 BUILDER_SCRIPT('./components/view/view.js');
@@ -25,6 +24,7 @@ BUILDER_SCRIPT('./components/view/view.js');
 BUILDER_SCRIPT('./modules/home/home.js');
   // Courses
 BUILDER_SCRIPT('./modules/courses/courses.js');
+BUILDER_CSS('./modules/courses/courses.css');
 
 
 BUILDER_SCRIPT('./components/navbar/launch.js');
