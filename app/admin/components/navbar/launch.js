@@ -1,4 +1,3 @@
-// JavaScript
 console.log('Launch On');
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     BUTTON.addEventListener('click', () => {
       VIEWS.appendChild(COMPONENT);
-      COMPONENT.style.display = 'block'; // Asegúrate de que sea visible
+      COMPONENT.style.display = 'block';
     });
   });
   
