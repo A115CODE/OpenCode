@@ -13,6 +13,9 @@ function BUILDER_CSS(URL) {
 }
 
 // Components
+  // NavBar
 BUILDER_SCRIPT('./components/navbar/navbar.js')
 BUILDER_CSS('./components/navbar/navbar.css')
+  // View
+BUILDER_SCRIPT('./components/view/view.js')
 // Modules
