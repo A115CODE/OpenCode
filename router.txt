@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Router Outlet JS</title>
+    <style>
+      .view {
+        display: none;
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+      }
+      .active {
+        display: block;
+      }
+      button {
+        margin: 5px;
+        padding: 8px 15px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+      <button data-view="home">Home</button>
+      <button data-view="about">About</button>
+      <button data-view="contact">Contact</button>
+    </div>
+
+    <div id="router-outlet">
+      <!-- Las vistas se mostrarán aquí -->
+    </div>
+
+    <!-- Definición de las vistas -->
+    <div id="home" class="view">
+      <h1>Página de Inicio</h1>
+      <p>Bienvenido a la página principal.</p>
+    </div>
+
+    <div id="about" class="view">
+      <h1>Acerca de Nosotros</h1>
+      <p>Información sobre nuestra empresa.</p>
+    </div>
+
+    <div id="contact" class="view">
+      <h1>Contacto</h1>
+      <p>Puedes contactarnos en info@example.com</p>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const routerOutlet = document.getElementById('router-outlet');
+        const views = document.querySelectorAll('.view');
+        const buttons = document.querySelectorAll('button[data-view]');
+
+        // Mostrar vista inicial
+        showView('home');
+
+        // Agregar event listeners a los botones
+        buttons.forEach((button) => {
+          button.addEventListener('click', function () {
+            const viewId = this.getAttribute('data-view');
+            showView(viewId);
+          });
+        });
+
+        function showView(viewId) {
+          // Ocultar todas las vistas
+          views.forEach((view) => {
+            view.classList.remove('active');
+          });
+
+          // Mostrar la vista seleccionada
+          const activeView = document.getElementById(viewId);
+          if (activeView) {
+            activeView.classList.add('active');
+
+            // Limpiar el router outlet y agregar la vista activa
+            routerOutlet.innerHTML = '';
+            routerOutlet.appendChild(activeView.cloneNode(true));
+          }
+        }
+
+        // Opcional: Manejar cambios en la URL
+        window.addEventListener('popstate', function () {
+          const viewId = window.location.hash.substring(1) || 'home';
+          showView(viewId);
+        });
+      });
+    </script>
+  </body>
+</html>
