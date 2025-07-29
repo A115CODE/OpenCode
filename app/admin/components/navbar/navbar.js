@@ -18,3 +18,11 @@ NAVBAR.appendChild(BTN_COURSES);
 const ICO_COURSES = document.createElement('img');
 ICO_COURSES.src = '../assets/courses.svg'
 BTN_COURSES.appendChild(ICO_COURSES);
+
+// Crear el botón
+const BTN_CONTACT = document.createElement('button');
+BTN_CONTACT.textContent = 'Contact'; // Establecer el texto del botón
+BTN_CONTACT.setAttribute('data-view', 'contact'); // Añadir el atributo data-view
+
+// Añadir el botón al NAVBAR (asumiendo que NAVBAR ya está definido)
+NAVBAR.appendChild(BTN_CONTACT);
