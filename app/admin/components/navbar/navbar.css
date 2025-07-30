@@ -1,7 +1,18 @@
 #NAVBAR{
-    background-color: aquamarine;
+    background-color: #000;
     width: 100%;
     height: 10vh;
     position: fixed;
     bottom: 0%;
+    border-radius: 16px 16px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btns{
+    border: none;
+    background-color: transparent;
+}
+.btns:active{
+    outline: none;
 }

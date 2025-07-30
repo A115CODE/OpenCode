@@ -26,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #227778; /* Color del pulgar (barra que se mueve) */
+  background: var(--color-1); /* Color del pulgar (barra que se mueve) */
   border-radius: 10px;
 }
 
