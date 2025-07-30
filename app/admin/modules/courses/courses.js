@@ -6,3 +6,4 @@ const COURSES = document.createElement('h1');
 COURSES.textContent = 'COURSES Is On!';
 COURSES.classList.add('views');
 COURSES.id = 'COURSES';
+document.getElementById('VIEWS_CONTAINER').appendChild(COURSES);

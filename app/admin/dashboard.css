@@ -1,0 +1,7 @@
+/* Estilos de launch*/
+.views {
+    display: none;
+}
+.active {
+    display: block;
+}
