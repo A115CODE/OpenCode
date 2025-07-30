@@ -4,25 +4,14 @@ const NAVBAR = document.createElement('navbar');
 NAVBAR.id = 'NAVBAR';
 document.body.appendChild(NAVBAR);
 
-const BTN_HOME = document.createElement('button');
-NAVBAR.appendChild(BTN_HOME);
+function BUILDER_SCRIPT(SRC) {
+    const BTN_NAVBAR = document.createElement('button');
+    BTN_NAVBAR.setAttribute('data-view', 'contact'); // Añadir el atributo data-view
+    BTN_NAVBAR.classList.add('btns');
+    NAVBAR.appendChild(BTN_NAVBAR);
 
-const ICO_HOME = document.createElement('img');
-ICO_HOME.src = '../assets/home.svg'
-BTN_HOME.appendChild(ICO_HOME);
-
-const BTN_COURSES = document.createElement('button');
-BTN_COURSES.id = 'BTN_COURSES';
-NAVBAR.appendChild(BTN_COURSES);
-
-const ICO_COURSES = document.createElement('img');
-ICO_COURSES.src = '../assets/courses.svg'
-BTN_COURSES.appendChild(ICO_COURSES);
-
-// Crear el botón
-const BTN_CONTACT = document.createElement('button');
-BTN_CONTACT.textContent = 'Contact'; // Establecer el texto del botón
-BTN_CONTACT.setAttribute('data-view', 'contact'); // Añadir el atributo data-view
-
-// Añadir el botón al NAVBAR (asumiendo que NAVBAR ya está definido)
-NAVBAR.appendChild(BTN_CONTACT);
+    // ICO
+    const ICO_COURSES = document.createElement('img');
+    ICO_COURSES.src = '../assets/courses.svg'
+    BTN_NAVBAR.appendChild(ICO_COURSES);
+}
